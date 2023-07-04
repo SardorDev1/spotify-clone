@@ -7,7 +7,18 @@
 }
 body{
     background-color: #050505;
+    animation: onwindow .4s forwards;
 }
+
+@keyframes onwindow{
+0%{
+    opacity: 0;
+}
+100%{
+    opacity: 100%;
+}
+}
+
 .Logo{
 width: 80px !important;
 height: 80px !important;
