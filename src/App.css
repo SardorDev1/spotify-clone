@@ -1,28 +1,99 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    transition: .3s !important;
 }
-body{
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+body {
     background-color: #050505;
     animation: onwindow .4s forwards;
+    font-family: 'Nanum Gothic Coding', monospace;
 }
 
-@keyframes onwindow{
-0%{
-    opacity: 0;
-}
-100%{
-    opacity: 100%;
-}
+@keyframes onwindow {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
-.Logo{
-width: 80px !important;
-height: 80px !important;
-margin-top: 10px;
-margin-left: 10px;
+.Logo {
+    width: 80px !important;
+    height: 80px !important;
+    margin-top: 10px;
+    margin-left: 10px;
 
+}
+
+@media(max-width:560px) {
+    .NavBar {
+        display: block !important;
+        height: 100% !important;
+        padding: 20px;
+    }
+
+    .NavBar .left .Logo {
+        margin: auto;
+    }
+
+    .NavBar .left {
+        display: block !important;
+
+        text-align: center;
+    }
+
+    .NavBar .left .BrandName {
+        margin-left: 0px !important;
+    }
+
+    .NavBar .right {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.NavBar .left {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    color: white !important;
+}
+
+.tranding {
+    display: flex !important;
+}
+
+@media(max-width:1140px) {
+    .CardTranding {
+        width: 100% !important;
+        margin: 0px !important;
+    }
+
+    .CardTrandingContent {
+        display: grid !important;
+        grid-template-columns: 2fr 2fr;
+        gap: 50px;
+
+    }
+}
+
+.CardTranding {
+    margin: 20px;
+}
+
+@media(max-width:580px) {
+    .CardTrandingContent {
+        display: grid !important;
+        grid-template-columns: 1fr ;
+    }
+    
 }
